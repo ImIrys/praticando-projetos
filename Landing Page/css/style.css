@@ -1,0 +1,174 @@
+:root{
+    --first: #eb1ccc;
+    --second: #95959a;
+    --text-color: #fff;
+    --text-second: #000;
+    --text-third: #5d5d5d;
+}
+
+*{
+    box-sizing: border-box; 
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    padding-bottom:500px;
+}
+
+/* Estilos para o Event Form */
+#event-description{
+    align-items: center;
+    /* Escurecer o fundo da imagem, basicamente um filtro preto na imagem, sem necessidade de criar outra DIV */
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/img/img/hrz-5.jpg");
+    background-position: center;
+    /* Aparecer o máximo possivel da imagem na area util */
+    background-size: cover;
+    color: var(--text-color);
+    display:flex;
+    /* 85% da tela */
+    height: 85vh;
+    justify-content:space-around;
+    
+}
+
+#disclaimer h2, 
+#disclaimer .event-date {
+    color: var(--first);
+}
+
+#disclaimer h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#disclaimer .about-event{
+    font-size: 2em;
+    font-weight: bold;
+    max-width: 350px;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#disclaimer p{
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+#disclaimer .event-date{
+    font-weight: bold;
+}
+
+#subscription-form{
+    background-color: var(--second);
+    max-width: 22%;
+    padding: 2em;
+}
+
+#subscription-form p{
+    color: var(--text-second);
+    font-size: 1.5em;    
+    margin-bottom: 1em;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group label{
+    color: var(--text-third);
+    font-weight: bold;
+    margin-bottom: .3em;
+}
+
+.form-group input, 
+.form-group select {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 6px 8px;    
+}
+
+.btn{
+    background-color: var(--first);
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    /* Efeito para mudar a cor ao passar o mouse sobre o botão, sem precisar colocar tonalidades diferentes*/
+    opacity: .8;
+    padding: 12px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* Efeito para mudar a cor ao passar o mouse sobre o botão, sem precisar colocar tonalidades diferentes*/
+.btn:hover{
+    opacity: 1;
+}
+
+/* Benefits section */
+#key-benefits h2{
+    background-color: var(--second);
+    font-weight: 500;
+    padding: 2em;
+    text-align: center;    
+}
+
+.benefits{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 4em;
+    width: 80%;
+}
+.benefit{
+    align-items: center;
+    color: var(--text-third);
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    text-align: center;
+}
+
+.benefit .benefit-img{
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 250px;
+    margin-bottom: 3em;
+    width: 250px;
+}
+
+#benefit-1{
+    background-image: url(/img/img/sqr-1.jpg);
+}
+
+#benefit-2{
+    background-image: url(/img/img/sqr-2.jpg);
+}
+
+#benefit-3{
+    background-image: url(/img/img/sqr-3.jpg);
+}
+
+.benefit p{
+    margin-top: 17em;
+}
+
+/* Event location */
+#location{
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/img/img/hrz-1.jpg");
+    background-position: center;
+    background-size: cover;
+    color: var(--text-color);
+    display: flex;
+    height: 400px;
+    justify-content: space-around;
+    margin-bottom: 3em;
+}
+
